@@ -234,7 +234,6 @@ async function get_trending_movies() {
 add_to_dom_trending();
 async function add_to_dom_trending() {
   const data = await get_trending_movies();
-  console.log(data);
 
   trending_el.innerHTML = data
     .slice(0, 5)
